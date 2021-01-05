@@ -14,14 +14,14 @@
   type = ObjectiveGradientMinimize
   parameter_names = 'p1'
   num_values = '1'
-  initial_condition = '1000'
+  initial_condition = '100'
   misfit_name = 'misfit'
   adjoint_data_name = 'adjoint'
 []
 
 [Executioner]
   type = Optimize
-  tao_solver = taolmvm
+  tao_solver = taoblmvm
 # petsc_options_iname = '-tao_gatol'
   # petsc_options_value = '1e-4'
   # petsc_options_iname = '-tao_fd_gradient -tao_fd_delta -tao_gatol'

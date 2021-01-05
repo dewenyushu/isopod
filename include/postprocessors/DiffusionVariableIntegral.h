@@ -27,15 +27,7 @@ public:
 
 protected:
   virtual Real computeQpIntegral() override;
-  const VariableValue & _variable_grad_x;
-  const VariableValue & _variable_grad_y;
-  const VariableValue & _variable_grad_z;
-  //  /// Holds the forward solution gradient at the current quadrature points
-  //  const VariableGradient & _grad_other_var;
-  //
-  //  /// gradient of the shape function
-  const VariablePhiGradient & _grad_phi;
-  //
-  /// gradient of the test function
-  //  const VariableTestGradient & _grad_test;
+
+  // gradient of the forward solution
+  const VariableGradient & _grad_u_forward;
 };
